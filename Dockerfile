@@ -15,7 +15,7 @@ RUN mkdir build && \
 
 FROM ubuntu:18.04
 RUN apt-get update && \
-	apt-get install -y openssl wget python nano&& \
+	apt-get install -y openssl wget python nano vim&& \
 	rm -rf /var/lib/apt/lists/*
 RUN mkdir -p /var/ton-work/db && \
 	mkdir -p /var/ton-work/db/static

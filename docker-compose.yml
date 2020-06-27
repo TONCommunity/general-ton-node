@@ -5,11 +5,17 @@ services:
         container_name: genesis
         image: ton-private-network
         environment:
-            - PUBLIC_IP=172.28.1.1
-            - CONSOLE_PORT=4444
-            - PUBLIC_PORT=4444
+            - PUBLIC_IP=127.0.0.1
+            - CONSOLE_PORT=8827
+            - PUBLIC_PORT=8827
             - GENESIS=1
-            - DHT_PORT=6302
+            - DHT_PORT=8826
+            - LITESERVER=true
+            - LITE_PORT=8828
+        ports:
+            - "8826:8826"
+            - "8827:8827"
+            - "8828:8828"
         networks:
             testing_net:
                 ipv4_address: 172.28.1.1
