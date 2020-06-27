@@ -1,5 +1,5 @@
 # Telegram Open Network Node Container
-Dockerfile for running general TON node (works for many testnet). Read more on [TCF Hackermd](https://hackmd.io/@tcf/ByJ0O7CDL).
+Dockerfile for running general TON node (works for many testnet). 
 
 #### Build container
 ```bash
